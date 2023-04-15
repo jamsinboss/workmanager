@@ -1,0 +1,27 @@
+h3 {
+    margin-top: 10%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.work {
+    text-align: center;
+}
+
+.work button {
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: black;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.logout {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.logout a {
+    text-decoration-line: none;
+    color: gray;
+}

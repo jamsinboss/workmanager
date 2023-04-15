@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 - 잠신중학교 방송부 근태관리시스템</title>
+    <link rel="stylesheet" href="assets/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#808080">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="image">
+        <center><img src="images/logo.png"></center>
+    </div>
+    
+    <h3 class="title">잠신중학교 방송부<br />근태관리시스템에 오신 것을 환영합니다!<br /><br />방송부원임을 확인하기 위해,<br />보안코드를 입력해주세요.</h3>
+        <div class="pw">
+            <input type="password" id="pw" placeholder="보안코드" onkeydown="enterkey()">
+        </div>
+
+        <div class="btn">
+            <button onclick="verification()">로그인</button>
+        </div>
+    <script>
+        function enterkey() {
+            if (window.event.keyCode === 13) {
+                verification();
+            }
+        }
+        
+        function verification() {
+            
+            var pw = document.getElementById('pw').value;
+            var hash = 'e05af2198edbdf420daf18e4229819a5';
+            
+            if(CryptoJS.MD5(pw) == hash) {
+                var now = new Date();
+                var expires = new Date();
+                expires.setTime(now.getTime() + (30 * 24 * 60 * 60 * 1000)); 
+
+                document.cookie = "verification=true; expires=" + expires.toUTCString() + "; path=/";
+                alert('확인되었습니다.');
+                
+                location.href = '/index.html';
+            } else {
+                alert('보안코드가 일치하지 않습니다.');
+            }
+        }
+    </script>
+</body>
+</html>

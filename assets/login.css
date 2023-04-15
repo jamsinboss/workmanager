@@ -1,0 +1,31 @@
+.image img {
+    margin-top: 15%;
+    display: block;
+    width: 100px;
+    margin-bottom: 0;
+
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+div {
+    text-align: center;
+}
+
+.id input, .pw input {
+    width: 30ex;
+    height: 3ex;
+    margin-bottom: 3px;
+}
+
+.btn button {
+    background-color: #ffffff;
+    border-width: 1px;
+    margin-top: 10px;
+    width: 15ex;
+    height: 4ex;
+    margin-bottom: 15%;
+}

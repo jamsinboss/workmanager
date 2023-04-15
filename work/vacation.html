@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>휴가 제출 - 잠신중학교 방송부 근태관리시스템</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/work/work.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon_package_v0.16/safari-pinned-tab.svg" color="#808080">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        if (!document.cookie) {
+            alert('접근 권한이 없습니다! 로그인 페이지로 이동합니다..')
+            location.href = '/login.html';
+        }
+        
+        var cookieValue = document.cookie.split('; ').find(row => row.startsWith('verification=')).split('=')[1];
+        
+        if (cookieValue == 'true') {
+        } else {
+          alert('접근 권한이 없습니다! 로그인 페이지로 이동합니다..')
+        }
+    </script>
+</head>
+<body>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWZrKGNS-ozG2j1SVsWzpjkNUE60h-Krkk8NE8t6SPhHQj5g/viewform?embedded=true" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>
+    <div class="btn">
+        <button onclick="location.href='/index.html'">홈으로</button>
+    </div>
+</body>
+</html>
