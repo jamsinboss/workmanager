@@ -6,7 +6,14 @@
     width: 250px;
     height: 30px;
     background-color: #ffffff;
-    border-color: black;
+    border-color: #1D2346;
     margin-top: 20px;
     margin-bottom: 15px;
+    transition: all 0.2s;
+    border-radius: 5px;
+}
+
+.btn button:hover {
+    color: #ffffff;
+    background-color: #1D2346;
 }
