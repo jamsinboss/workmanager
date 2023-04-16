@@ -1,4 +1,4 @@
-h3 {
+h2 {
     margin-top: 10%;
     margin-bottom: 100px;
     text-align: center;
@@ -9,18 +9,28 @@ h3 {
 
 .work button {
     background-color: #ffffff;
-    border-color: black;
-    height: 30px;
-    width: 150px;
-    margin-bottom: 10px;
+    height: 50px;
+    width: 180px;
+    margin-bottom: 15px;
+    color: #1D2346;
+    border-radius: 5px;
+    transition: all 0.2s ;
+    border-color: #1D2346;
+}
+
+.work button:hover {
+    background-color: #1D2346;
+    color: #ffffff;
 }
 
 .logout {
     margin-top: 30px;
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .logout a {
     text-decoration-line: none;
     color: gray;
+    width: 50px;
 }

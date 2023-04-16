@@ -1,3 +1,7 @@
+.html {
+    background-color: #ffffff;
+}
+
 .image img {
     margin-top: 15%;
     display: block;
@@ -19,12 +23,24 @@ div {
     width: 30ex;
     height: 3ex;
     margin-bottom: 3px;
+    border-radius: 5px;
+    border-color: #1D2346;
 }
 
 .btn button {
     background-color: #ffffff;
     margin-top: 10px;
-    width: 15ex;
     height: 4ex;
     margin-bottom: 15%;
+    width: 120px;
+    padding: 0;
+    color: #1D2346;
+    border-radius: 5px;
+    transition: all 0.2s ;
+    border-color: #1D2346;
+}
+
+.btn button:hover {
+    background-color: #1D2346;
+    color: #ffffff;
 }
